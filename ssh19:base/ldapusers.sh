@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # llistaUsers="pere marta anna pau pere jordi"
 # for user in $llistaUsers
 # do
@@ -17,7 +18,8 @@
 #   fi
 # done
 
-# usuarios ldap samba
+
+# usuarios ldap 
 for num in {01..08}
 do 
     #echo -e "jupiter\njupiter" | smbpasswd -a user$num 
