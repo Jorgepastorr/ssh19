@@ -10,6 +10,7 @@
 /sbin/nslcd  && echo "nslcd OK"
 
 # generar claves host
-/sbin/ssh-keygen -A
+/usr/bin/ssh-keygen -A
+
 # ssh en detach
 /sbin/sshd -D
