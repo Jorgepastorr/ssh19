@@ -1,0 +1,23 @@
+version: "2"
+services:
+  ldap:
+    image: jorgepastorr/ldapserver19:latest
+    container_name: ldapserver
+    hostname: ldapserver
+    ports: 
+      - "389:389"
+    networks:
+     - mynet
+  samba:
+    image: jorgepastorr/ssh19:base
+    container_name: ssh
+    hostname: ssh
+    volumes:
+      - "homes:/tmp/home"
+    networks:
+     - mynet
+networks:
+  mynet:
+volumes:
+  homes:
+
